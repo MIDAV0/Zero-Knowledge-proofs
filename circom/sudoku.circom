@@ -71,7 +71,7 @@ template Sudoku(n){
     // Ensure uniqueness of each row
     component distinct[n];
     for (var i = 0; i < n; i++) {
-        distinct[i] = Distinct();
+        distinct[i] = Distinct(n);
         for (var j = 0; j < n; j++) {
             distinct[i].in[j] <== solution[i][j];
         }
